@@ -3,7 +3,7 @@
 import lockPoyfill from "./_lock"
 import type { MaybePromise } from "./_types"
 
-const nav = (typeof navigator === 'object' ? navigator : undefined)
+const nav = typeof navigator === "object" ? navigator : undefined
 // @ts-ignore
 const supports_lock = nav?.locks?.request
 
